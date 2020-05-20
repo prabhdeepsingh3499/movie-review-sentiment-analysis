@@ -14,7 +14,7 @@ Analysis of Movie Reviews, classifying them as positive or negative using Machin
 1. Understanding the dataset
 * Let's read the context of the dataset to understand the problem statement. 
 2. Downloading the dataset 
-* Now that you have an understanding of the dataset, go ahead and download two CSV files - the training and the test data. Simply click "Download (63MB)."
+* Now that you have an understanding of the dataset, go ahead and download the CSV file. Simply click "Download (63MB)."
 ### Exploratory Data Analysis
 * Let's check what the data looks like
 * Notice how the data contains HTML tags and special characters. We will clean them in the data cleaning step.
