@@ -4,8 +4,8 @@ Analysis of Movie Reviews, classifying them as positive or negative using Machin
 ### Summary
 * Got a Movie Review Dataset from Kaggle
 * Cleaned the Data by using NLTK, BeautifulSoup, regular expressions, string, and LabelEncoder libraries
-* Split the training and testing data by 80/20 ratio
 * Vectorized the reviews using TfidfVectorizer
+* Split the training and testing data by 80/20 ratio
 * Built a model using Linear Support Vector Classifier
 * Achieved 89% accuracy
 
@@ -29,15 +29,15 @@ Analysis of Movie Reviews, classifying them as positive or negative using Machin
 * By using regular expressions library we remove special characters and numbers found in our reviews
 * By using LabelEncoder we encode our sentiment column as it is categorical and algorithms will not work for categorical data. 1 represents a positive sentiment and 0 represents a negative sentiment
 * After that we assign sentiment column as y variable and review column as X variable
+### Vectorize reviews with TfidfVectorizer
+* Now, we will convert text into numeric form as our model won't be able to understand the human language. We will vectorize the reviews using TfidfVectorizer. TfidfVectorizer is used to convert a collection of raw documents into a matrix of TF-IDF features.
 ![Cleaned Data](https://github.com/prabhdeepsingh3499/movie-review-sentiment-analysis/blob/master/img/CleanText.png?raw=True)
 ### Train Test Split
 * Now that we have cleaned our data, we will do train and test split using train_test_split function
 * We will use 80% of data as training data and 20% of data as testing data.
-### Vectorize reviews with TfidfVectorizer
-* Now, we will convert text into numeric form as our model won't be able to understand the human language. We will vectorize the reviews using TfidfVectorizer. TfidfVectorizer is used to convert a collection of raw documents into a matrix of TF-IDF features.
 ### Model Building
 * Now that we have vectorized all the reviews, we will build a model to classify the test data. 
-* We will use a supervised learning algorithm, Linear Support Vector Classifier (LSVC). It is widely used for binary classifications and multi-class classifications.
+* We will use a supervised learning algorithm, Linear Support Vector Classifier (Linear SVC). It is widely used for binary classifications and multi-class classifications.
 * You can find more explanation on scikit learn documentation page-https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html
 ### Accuracy
 * The accuracy turned out to be 89%!
